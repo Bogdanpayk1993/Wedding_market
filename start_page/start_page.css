@@ -1,0 +1,39 @@
+.Body {
+    width: 20%;
+    margin-left: 80vw;
+    display: flex;
+    align-items: center;
+}
+
+.Body div p {
+    margin-bottom: 0px;
+}
+
+.Body div p a {
+    font-size: 3.5vw;
+    font-weight: bold;
+    font-family: Bicknam_Script_One;
+    color: black;
+}
+
+@font-face {
+    font-family: Bicknam_Script_One;
+    src: url(../Bickham_Script_One.ttf)
+}
+
+@media screen and (max-width: 600px) {
+    .Body {
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Body div p a {
+        font-size: 8vh;
+        font-weight: bold;
+        font-family: Bicknam_Script_One;
+        color: black;
+    }
+}

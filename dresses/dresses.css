@@ -1,0 +1,132 @@
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.6vw;
+}
+
+#Body {
+    overflow: auto; 
+}
+
+#Body .goods {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 29vw;
+    margin: 2.5%;
+    margin-top: 1.3vw;
+    margin-bottom: 1.3vw;
+    padding: 0.6vw;
+    border-radius: 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Body .goods img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5vw;
+}
+
+#Body .goods div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    cursor: zoom-in;
+}
+
+#Body .goods div h2 {
+    font-size: 1.5vw;
+    font-style: italic;
+    width: 80%;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 0.5vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#Body .big_img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 16;
+    margin-top: -10vw;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#Body .big_img img {
+    height: 100%;
+}
+
+#Body .big_img p {
+    margin-top: -98vh;
+    margin-right: 2vh;
+    text-align: right;
+    font-size: 4vh;
+    font-weight: bold;
+    color: #999999;
+    cursor: default;
+    position: relative;
+    z-index: 16;
+}
+
+#Body .big_img p:hover {
+    color: #e8e8e8;
+}
+
+#Body .big_img .zoom {
+    display: inline-block;
+    position:relative;
+}
+
+
+#Body .big_img .img-magnifier-glass {
+    position: absolute;
+    border: 1px solid #000;
+    cursor: none;
+    width: 100%;
+    height: 50%;
+    margin-top: -1000vw;
+    z-index: 16;
+}
+
+#Body .big_img .zoom:hover .img-magnifier-glass {
+    margin-top: 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #Body .goods {
+        position: relative;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+        height: 70vw;
+        margin: 1%;
+        padding: 1.4%;
+        border-radius: 1vw;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #Body .goods div h2 {
+        font-size: 3vw;
+        font-style: italic;
+        width: 80%;
+        text-align: center;
+        margin-top: 6%;
+        border-radius: 0.5vw;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+}
